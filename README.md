@@ -1,2 +1,2 @@
 # Joi_SoC
-SoC project for Joe initial version
+SoC project for Joi initial version
