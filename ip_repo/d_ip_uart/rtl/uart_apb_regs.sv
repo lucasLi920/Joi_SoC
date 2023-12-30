@@ -1,7 +1,7 @@
-module moduleName #(
-  parameter   ADDR_WD       = 12  ,                 // uart memeory slot size
-  parameter   TX_FIFO_DPL2  = 3   ,                 // tx fifo depth log2
-  parameter   RX_FIFO_DPL2  = 3                     // rx fifo depth log2
+module uart_apb_regs #(
+  parameter   ADDR_WD       = 12  ,                         // uart memeory slot size
+  parameter   TX_FIFO_DPL2  = 3   ,                         // tx fifo depth log2
+  parameter   RX_FIFO_DPL2  = 3                             // rx fifo depth log2
 ) (
   input   logic[ADDR_WD-1:0]        apb_addr            ,
   input   logic                     apb_read_en         ,
