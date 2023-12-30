@@ -1,3 +1,9 @@
+//================================================================================================
+// Engineer        : lucas li (bin)
+// E-mail          : libin.lucas@foxmail.com
+// Date            : 2023-12-30
+// Description     : uart internal registers/program model refer to stm32 usart and modify
+//================================================================================================
 module uart_apb_regs #(
   parameter   ADDR_WD       = 12  ,                         // uart memeory slot size
   parameter   TX_FIFO_DPL2  = 3   ,                         // tx fifo depth log2
@@ -20,7 +26,7 @@ module uart_apb_regs #(
     
   output  logic[8:0]                txd_reg_txd         ,   // TX data for transmit
   input   logic[8:0]                rxd_reg_rxd         ,   // RX data from RX
-  output  logic[11:0]               br_reg_mentissa     ,   // baud rate mentissa part
+  output  logic[11:0]               br_reg_mantissa     ,   // baud rate mantissa part
   output  logic[3:0]                br_reg_fraction     ,   // baud rate fraction part
   
   output  logic                     cr0_reg_rxwk_en     ,   // RX wakeup enable

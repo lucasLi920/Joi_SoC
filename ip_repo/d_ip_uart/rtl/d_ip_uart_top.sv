@@ -1,3 +1,9 @@
+//================================================================================================
+// Engineer        : lucas li (bin)
+// E-mail          : libin.lucas@foxmail.com
+// Date            : 2023-12-30
+// Description     : top level of uart with APB interface
+//================================================================================================
 module d_ip_uart_top #(
   parameter     ADDR_WD       = 12  ,
   parameter     TX_FIFO_DPL2  = 3   ,
