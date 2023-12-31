@@ -66,7 +66,8 @@ localparam  CR1_ADDR        = 32'h0000_0018;    // control reg1
 localparam  TFIFO_ADDR      = 32'h0000_0020;    // TX FIFO control reg
 localparam  RFIFO_ADDR      = 32'h0000_0024;    // RX FIFO control reg
 
-logic[31:0] uart_status_reg;
-
+// ----------------------------------------------------------------------------
+// APB write
+// ----------------------------------------------------------------------------
 
 endmodule
